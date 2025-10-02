@@ -12,7 +12,7 @@ for i in range(1, rows + 1):
     print(" " * (rows - i), end="")
     print("*" * (2 * i - 1))
 
-    
+
 
 # -------------------------------------------------------
 '''
@@ -44,3 +44,17 @@ for i in range(n):
             print(" ", end=" ")
     print()
 # -------------------------------------------------------------
+'''
+***
+**
+*
+'''
+#print pattern using recursive 
+
+def pattern(n):
+        if n==0:
+             return
+        print("*"*n)
+        pattern(n-1)
+
+pattern(3)
